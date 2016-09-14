@@ -1,0 +1,21 @@
+user_id:
+  type:id
+  value:loginAccount_input
+user_pwd:
+  type:id
+  value:loginPassword_input
+login_button:
+  type:id
+  value:login_btn
+select_icon:
+  type:className
+  value:icon-down-sm
+login_list:
+  type:className
+  value:login_list
+select_list:
+  type:className
+  value:select-list
+cover:
+  type:className
+  value:cover

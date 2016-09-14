@@ -1,0 +1,116 @@
+currency_assets:
+  type:id
+  value:currencyAssets
+currency_edeem:
+  type:id
+  value:currRedeem
+currency_purchase:
+  type:id
+  value:currPurchase
+  
+# CurrencyAssetsPage element 
+tradeList_query:
+  type:id
+  value:tradeListQuery
+currencyRedeem_btn:
+  type:id
+  value:currencyRedeemUrl
+currencyPurchase_btn:
+  type:id
+  value:currencyPurchaseUrl
+  
+# CurrencyPurchasePage element
+found_source:
+  type:id
+  value:choseTransactionsAccount
+apply_amount:
+  type:id
+  value:applySum
+tradePwd:
+  type:id
+  value:tradePwd
+comfirm_pur_btn:
+  type:id
+  value:confirmCurrencyPurchase
+account_list:
+  type:id
+  value:transactionsAccountList
+
+#PurchaseResultPage element
+purchase_title:
+  type:id
+  value:currencyPurchaseTitle
+purchase_reslut:
+  type:id
+  value:currencyPurchaseResult
+purchase_date:
+  type:id
+  value:transactionsDate
+go_back:
+  type:id
+  value:goBack
+  
+# CurrencyRedeemPage element
+fundAccount_select:
+  type:id
+  value:choseRedeemToTransactionAccount
+available_balance:
+  type:id
+  value:availableMoney
+redeem_amount:
+  type:id
+  value:applySum
+redeem_all:
+  type:id
+  value:redeemAll
+trade_pwd:
+  type:id
+  value:tradePwd
+comfirm_btn:
+  type:id
+  value:confirmCurrencyRedeem
+select_Account: 
+  type:id
+  value:redeemToTransactionAccountList
+  
+#RedeemResultPage  element 
+redeem_title:
+  type:id
+  value:currencyRedeemTitle
+trade_amount:
+  type:id
+  value:redeemResult
+redeem_time:
+  type:id
+  value:transactionsDate
+result_account:
+  type:id
+  value:resultAccount
+go_back:
+  type:id
+  value:goBack
+  
+# TradeDetailPage element
+trade_form:
+  type:className
+  value:sub-form form-trade
+
+# TradeQueryPage element
+details_all:
+  type:id
+  value:all
+details_pur:
+  type:id
+  value:pur
+details_redeem:
+  type:id
+  value:redeem
+details_other:
+  type:id
+  value:other
+state_select:
+  type:className
+  value:select-detail
+trade_list:
+  type:id
+  value:tradeList

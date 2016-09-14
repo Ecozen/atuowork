@@ -1,0 +1,145 @@
+bank_card_manage:
+  type:partialLinkText
+  value:我的银行卡
+fixed_investment:
+  type:partialLinkText
+  value:我的定投
+
+# BankCardManagerPage element: 
+bank_card_list:
+  type:id
+  value:bankCardList
+add_bank_card:
+  type:linkText
+  value:新增银行卡
+  
+# AddCardPage_1 element
+id_message:
+  type:css
+  value:#step1 > ul:nth-child(1)
+list_message:
+  type:css
+  value:#step1 > ul:nth-child(2)
+go_back:
+  type:id
+  value:goBack
+get_verify_code:
+  type:id
+  value:getVerifyCode
+go_step2:
+  type:id
+  value:goNextStep2
+  
+# AddCardSuccessPage element
+strade_btn:
+  type:linkText
+  value:开始交易
+  
+# TradePwdPage element
+trade_pwd:
+  type:id
+  value:tradePwd
+confirm_btn:
+  type:id
+  value:goNextStep3
+  
+# FixedInvestmentPage element
+ava_fixed:
+  type:linkText
+  value:有效定投
+unava_fixed:
+  type:linkText
+  value:已暂停定投
+fixed_list:
+  type:id
+  value:fixList
+add_fixed:
+  type:linkText
+  value:添加定投
+perfer_fund:
+  type:linkText
+  value:优选基金
+all_fund:
+  type:linkText
+  value:全部基金
+fund_list:  
+  type:id
+  value:fundList0
+all_fund_list:
+  type:id
+  value:fundList
+ava_fixList:
+  type:id
+  value:fixList  
+
+cycle_list:
+  type:id
+  value:cycleList
+  
+fund_source:
+  type:id
+  value:chooseBankName
+pay_cycle:
+  type:id
+  value:chooseCycleName
+fix_amount:
+  type:id
+  value:fixamount  
+
+next_step_btn:
+  type:linkText
+  value:下一步
+pwd:
+  type:id
+  value:pwd
+  
+comfirm_btn:
+  type:linkText
+  value:确认
+   
+bank_list:
+  type:id
+  value:bankList
+confirm_cycle_btn:
+  type:id
+  value:chooseCycleBtn
+  
+title:
+  type:className
+  value:title
+step4_title:
+  type:css
+  value:#step4 > header > div.title
+  
+#InvestmentDetailPage
+box:
+  type:id
+  value:box
+pause_btn:
+  type:id
+  value:pause
+edit_btn:
+  type:id
+  value:edit
+pause_pwd:
+  type:id
+  value:hpwd
+cancel_btn_holder:
+  type:linkText
+  value:取消
+confirm_btn_holder:
+  type:linkText
+  value:确认
+save_btn:
+  type:linkText
+  value:保存
+confirm_btn_edit:
+  type:linkText
+  value:是
+  
+step3:
+  type:id
+  value:step3  
+step5:
+  type:id
+  value:step5 

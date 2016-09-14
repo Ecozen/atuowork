@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [elementManager_demo]" parallel="tests">
+  <parameter name="driverConfgFilePath" value="config/driver.properties"/>
+  <parameter name="testurl" value="http://192.168.0.108:8090/lion-trade/h/login.action"/>
+  <parameter name="timeOut" value="20"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="sleepTime" value="800"/>
+  <parameter name="waitMillisecondsForAlert" value="40000"/>
+  <listeners>
+    <listener class-name="com.test.plugins.arrow.TestResultListener"/>
+    <listener class-name="com.test.plugins.arrow.RetryListener"/>
+    <listener class-name="com.test.plugins.arrow.PowerEmailableReporter"/>
+  </listeners>
+  <test name="lionfund_test(failed)" parallel="tests">
+    <classes>
+      <class name="com.test.page.testcases.LionFund_02_FixedInvestment_Test">
+        <methods>
+          <include name="pauseFixedTest"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.test.page.testcases.LionFund_02_FixedInvestment_Test -->
+    </classes>
+  </test> <!-- lionfund_test(failed) -->
+</suite> <!-- Failed suite [elementManager_demo] -->

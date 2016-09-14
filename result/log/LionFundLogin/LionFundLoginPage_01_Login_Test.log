@@ -1,0 +1,8 @@
+[2016-09-05 16:03:59] [INFO] 当前操作系统是:[Windows 7]
+[2016-09-05 16:03:59] [INFO] 启动测试浏览器：[chrome]
+[2016-09-05 16:04:05] [INFO] 打开测试页面:[http://192.168.0.108:8090/lion-trade/h/login.action]
+[2016-09-05 16:04:07] [INFO] loginTest Start
+[2016-09-05 16:04:47] [INFO] 打开测试页面:[http://192.168.0.108:8090/lion-trade/h/logout.action]
+[2016-09-05 16:04:52] [INFO] loginTest Success
+[2016-09-05 16:04:52] [INFO] loginTest Start
+[2016-09-05 16:05:01] [INFO] 打开测试页面:[http://192.168.0.108:8090/lion-trade/h/login.action]

@@ -1,0 +1,12 @@
+footer:
+  type:id
+  value:nav_foot_ul
+my_account:
+  type:id
+  value:s_myAccountButton
+my_assert:
+  type:id
+  value:s_myAssertButton
+fund_list:
+  type:id
+  value:s_fundListButton

@@ -1,0 +1,9 @@
+[2016-09-08 17:34:37] [INFO] 当前操作系统是:[Windows 7]
+[2016-09-08 17:34:37] [INFO] 启动测试浏览器：[chrome]
+[2016-09-08 17:34:41] [INFO] 打开测试页面:[http://192.168.0.108:8090/lion-trade/h/login.action]
+[2016-09-08 17:34:41] [INFO] currencyPurchaseTest Start
+[2016-09-08 17:34:48] [INFO] find expected word: [诺安基金]
+[2016-09-08 17:35:09] [INFO] find expected word: [取现结果]
+[2016-09-08 17:35:09] [INFO] find expected word: [取现金额：1010元]
+[2016-09-08 17:35:14] [INFO] currencyPurchaseTest Success
+[2016-09-08 17:35:15] [INFO] PassedTests = currencyPurchaseTest

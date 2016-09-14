@@ -1,0 +1,43 @@
+[2016-09-13 11:27:35] [INFO] 当前操作系统是:[Windows 7]
+[2016-09-13 11:27:35] [INFO] 启动测试浏览器：[chrome]
+[2016-09-13 11:27:38] [INFO] 打开测试页面:[http://192.168.0.108:8090/lion-trade/h/login.action]
+[2016-09-13 11:27:38] [INFO] currencyRedeemTest Start
+[2016-09-13 11:27:38] [DEBUG] find element:select_icon
+[2016-09-13 11:27:38] [DEBUG] find element:select_list
+[2016-09-13 11:27:40] [DEBUG] find element:user_id
+[2016-09-13 11:27:40] [DEBUG] find element:user_id
+[2016-09-13 11:27:40] [DEBUG] find element:user_pwd
+[2016-09-13 11:27:40] [DEBUG] find element:user_pwd
+[2016-09-13 11:27:40] [DEBUG] find element:login_button
+[2016-09-13 11:27:45] [INFO] find expected word: [诺安基金]
+[2016-09-13 11:27:45] [DEBUG] find element:my_assert
+[2016-09-13 11:27:51] [DEBUG] find element:currency_edeem
+[2016-09-13 11:27:56] [DEBUG] find element:fundAccount_select
+[2016-09-13 11:27:57] [DEBUG] find element:select_Account
+[2016-09-13 11:27:58] [DEBUG] find element:redeem_amount
+[2016-09-13 11:27:58] [DEBUG] find element:redeem_amount
+[2016-09-13 11:27:59] [DEBUG] find element:trade_pwd
+[2016-09-13 11:28:00] [DEBUG] find element:trade_pwd
+[2016-09-13 11:28:01] [DEBUG] find element:comfirm_btn
+[2016-09-13 11:28:06] [DEBUG] find element:redeem_title
+[2016-09-13 11:28:06] [INFO] find expected word: [取现结果]
+[2016-09-13 11:28:06] [DEBUG] find element:trade_amount
+[2016-09-13 11:28:06] [INFO] find expected word: [取现金额：1010元]
+[2016-09-13 11:28:11] [DEBUG] find element:go_back
+[2016-09-13 11:28:11] [INFO] currencyRedeemTest Success
+[2016-09-13 11:28:11] [INFO] currencyPurchaseTest Start
+[2016-09-13 11:28:11] [DEBUG] find element:my_assert
+[2016-09-13 11:28:19] [DEBUG] find element:currency_purchase
+[2016-09-13 11:28:24] [DEBUG] find element:found_source
+[2016-09-13 11:28:25] [DEBUG] find element:account_list
+[2016-09-13 11:28:26] [DEBUG] find element:apply_amount
+[2016-09-13 11:28:26] [DEBUG] find element:apply_amount
+[2016-09-13 11:28:28] [DEBUG] find element:tradePwd
+[2016-09-13 11:28:28] [DEBUG] find element:tradePwd
+[2016-09-13 11:28:29] [DEBUG] find element:comfirm_pur_btn
+[2016-09-13 11:28:34] [DEBUG] find element:purchase_title
+[2016-09-13 11:28:34] [ERROR] expected word: [充值结果] but find [现金宝充值]
+[2016-09-13 11:28:34] [INFO] currencyPurchaseTest Failure
+[2016-09-13 11:28:34] [INFO] [2016_09_13_11_28_34_currencyPurchaseTest] tackScreentshot Success，save as：[ screenshot/2016_09_13_11_28_34_currencyPurchaseTest.jpg ]
+[2016-09-13 11:28:37] [INFO] PassedTests = currencyRedeemTest
+[2016-09-13 11:28:37] [INFO] failedTest = currencyPurchaseTest
