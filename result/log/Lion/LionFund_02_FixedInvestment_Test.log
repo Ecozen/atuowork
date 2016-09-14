@@ -1,49 +1,59 @@
-[2016-09-13 18:00:14] [INFO] 当前操作系统是:[Windows 7]
-[2016-09-13 18:00:14] [INFO] 启动测试浏览器：[chrome]
-[2016-09-13 18:01:18] [ERROR] 浏览器不能正常工作，请检查是不是被手动关闭或者其他原因
-org.openqa.selenium.WebDriverException: unknown error: Chrome failed to start: crashed
-  (Driver info: chromedriver=2.21.371459 (36d3d07f660ff2bc1bf28a75d1cdabed0983e7c4),platform=Windows NT 6.1 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 61.78 seconds
-Build info: version: '2.53.0', revision: '35ae25b', time: '2016-03-15 17:00:58'
-System info: host: 'WIN-QFVULB7F2O7', ip: '192.168.0.162', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.7.0_79'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:526)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:170)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:159)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:148)
-	at com.test.utils.page.SelectBrowser.selectExplorerByName(SelectBrowser.java:52)
-	at com.test.utils.page.PageHelper.launchBrowser(PageHelper.java:37)
-	at com.test.base.TestBase.setup(TestBase.java:39)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:510)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:211)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:170)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:104)
-	at org.testng.TestRunner.privateRun(TestRunner.java:774)
-	at org.testng.TestRunner.run(TestRunner.java:624)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:393)
-	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-[2016-09-13 18:01:18] [INFO] pauseFixedTest Start
-[2016-09-13 18:01:18] [INFO] pauseFixedTest Failure
-[2016-09-13 18:01:18] [ERROR] [2016_09_13_18_01_18_pauseFixedTest ]tackScreentshot Failure:null
-[2016-09-13 18:01:19] [INFO] failedTest = pauseFixedTest
+[2016-09-14 18:16:50] [INFO] 当前操作系统是:[win]
+[2016-09-14 18:16:50] [INFO] 启动测试浏览器：[chrome]
+[2016-09-14 18:16:55] [INFO] 打开测试页面:[http://192.168.0.108:8090/lion-trade/h/login.action]
+[2016-09-14 18:16:55] [INFO] addFixedTest Start
+[2016-09-14 18:16:55] [DEBUG] find element:select_icon
+[2016-09-14 18:16:55] [DEBUG] find element:select_list
+[2016-09-14 18:16:56] [DEBUG] find element:user_id
+[2016-09-14 18:16:57] [DEBUG] find element:user_id
+[2016-09-14 18:16:57] [DEBUG] find element:user_pwd
+[2016-09-14 18:16:57] [DEBUG] find element:user_pwd
+[2016-09-14 18:16:57] [DEBUG] find element:login_button
+[2016-09-14 18:17:02] [INFO] find expected word: [诺安基金]
+[2016-09-14 18:17:02] [DEBUG] find element:my_account
+[2016-09-14 18:17:03] [DEBUG] find element:fixed_investment
+[2016-09-14 18:17:07] [DEBUG] find element:add_fixed
+[2016-09-14 18:17:12] [DEBUG] find element:all_fund_list
+[2016-09-14 18:17:19] [DEBUG] find element:title
+[2016-09-14 18:17:19] [INFO] find expected word: [设置定投]
+[2016-09-14 18:17:19] [DEBUG] find element:fund_source
+[2016-09-14 18:17:20] [DEBUG] find element:bank_list
+[2016-09-14 18:17:21] [DEBUG] find element:pay_cycle
+[2016-09-14 18:17:23] [DEBUG] find element:cycle_list
+[2016-09-14 18:17:23] [DEBUG] find element:confirm_cycle_btn
+[2016-09-14 18:17:23] [DEBUG] find element:fix_amount
+[2016-09-14 18:17:23] [DEBUG] find element:fix_amount
+[2016-09-14 18:17:23] [DEBUG] find element:next_step_btn
+[2016-09-14 18:17:26] [DEBUG] find element:step4_title
+[2016-09-14 18:17:27] [INFO] find expected word: [确认定投]
+[2016-09-14 18:17:27] [DEBUG] find element:pwd
+[2016-09-14 18:17:27] [DEBUG] find element:comfirm_btn
+[2016-09-14 18:17:32] [DEBUG] find element:step5
+[2016-09-14 18:17:32] [INFO] find expected word: [受理结果]
+[2016-09-14 18:17:32] [DEBUG] find element:step5
+[2016-09-14 18:17:32] [INFO] find expected word: [201]
+[2016-09-14 18:17:35] [DEBUG] find element:step5
+[2016-09-14 18:17:36] [INFO] addFixedTest Success
+[2016-09-14 18:17:36] [INFO] editFixedTest Start
+[2016-09-14 18:17:39] [DEBUG] find element:ava_fixList
+[2016-09-14 18:17:39] [DEBUG] find element:ava_fixList
+[2016-09-14 18:17:40] [DEBUG] find element:edit_btn
+[2016-09-14 18:17:40] [DEBUG] find element:pay_cycle
+[2016-09-14 18:17:41] [DEBUG] find element:cycle_list
+[2016-09-14 18:17:41] [DEBUG] find element:confirm_cycle_btn
+[2016-09-14 18:17:43] [DEBUG] find element:fix_amount
+[2016-09-14 18:17:43] [DEBUG] find element:fix_amount
+[2016-09-14 18:17:43] [DEBUG] find element:pwd
+[2016-09-14 18:17:43] [DEBUG] find element:save_btn
+[2016-09-14 18:17:45] [DEBUG] find element:confirm_btn_edit
+[2016-09-14 18:17:53] [INFO] editFixedTest Success
+[2016-09-14 18:17:53] [INFO] pauseFixedTest Start
+[2016-09-14 18:17:56] [DEBUG] find element:ava_fixList
+[2016-09-14 18:17:56] [DEBUG] find element:ava_fixList
+[2016-09-14 18:17:57] [DEBUG] find element:pause_btn
+[2016-09-14 18:17:58] [DEBUG] find element:pause_pwd
+[2016-09-14 18:17:59] [DEBUG] find element:confirm_btn_holder
+[2016-09-14 18:18:05] [INFO] pauseFixedTest Success
+[2016-09-14 18:18:06] [INFO] PassedTests = editFixedTest
+[2016-09-14 18:18:06] [INFO] PassedTests = addFixedTest
+[2016-09-14 18:18:06] [INFO] PassedTests = pauseFixedTest

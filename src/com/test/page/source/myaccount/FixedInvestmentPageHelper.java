@@ -57,6 +57,7 @@ public class FixedInvestmentPageHelper extends PageHelper{
 		sleep(5);
 		checkFixedResult(amount);
 		sleep(3);
+		fixedInvestmentPage.getStep5().getElement(By.cssSelector("#step5 > header > div.hl")).click();//返回
 	}
 	
 	@KeyMethod("修改定投")
@@ -94,7 +95,9 @@ public class FixedInvestmentPageHelper extends PageHelper{
 		sleep(1);
 		fixedInvestmentPage.getPause_pwd().type((String) params.get("pwd"));
 		fixedInvestmentPage.getConfirm_btn_holder().click();
-		sleep(5);
+		sleep(3);
+		driver.switchTo().window(driver.getWindowHandles().iterator().next()).findElement(By.linkText("确定")).click();
+		sleep(3);
 	}
 	
 	//从优选基金中选
@@ -157,7 +160,10 @@ public class FixedInvestmentPageHelper extends PageHelper{
 		fixedInvestmentPage.getPay_cycle().click();//点击扣款周期
 		sleep(1);
 		fixedInvestmentPage.getCycle_list().getElement(selectDate(cycle)).selectByText(date);//选择扣款周期
+		
 		fixedInvestmentPage.getConfirm_cycle_btn().click();//点击确认
+//		String js = "document.getElementById('chooseCycleBtn').click();";
+//		executeJS(js, null);
 		fixedInvestmentPage.getFix_amount().clear();
 		fixedInvestmentPage.getFix_amount().type(amount);//输入金额
 		fixedInvestmentPage.getNext_step_btn().click();

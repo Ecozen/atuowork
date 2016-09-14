@@ -1,5 +1,6 @@
 package com.test.utils.page;
 import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Properties;
@@ -59,9 +60,17 @@ public class SelectBrowser {
 				return new RemoteWebDriver(url, ieCapabilities);
 			} else if (browser.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver", chromedriver_win);
-				
+				ChromeDriverService service = new ChromeDriverService.Builder()
+						.usingDriverExecutable(new File(chromedriver_win))
+						.usingAnyFreePort()
+						.build();
+				try {
+					service.start();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
 				//返回谷歌浏览器对象
-				 return new RemoteWebDriver(url, DesiredCapabilities.chrome());
+				 return new RemoteWebDriver(service.getUrl(), DesiredCapabilities.chrome());
 			} else if (browser.equalsIgnoreCase("firefox")) {
 				//返回火狐浏览器对象
 				return new RemoteWebDriver(url,DesiredCapabilities.firefox());

@@ -31,8 +31,8 @@ public class TestBase {
 		
 		String browserName = context.getCurrentXmlTest().getParameter("browserName");
 		int timeOut = Integer.valueOf(context.getCurrentXmlTest().getParameter("timeOut"));
-		int sleepTime = Integer.valueOf(context.getCurrentXmlTest().getParameter("sleepTime"));
-		int waitMillisecondsForAlert = Integer.valueOf(context.getCurrentXmlTest().getParameter("waitMillisecondsForAlert"));
+//		Integer.valueOf(context.getCurrentXmlTest().getParameter("sleepTime"));
+//		Integer.valueOf(context.getCurrentXmlTest().getParameter("waitMillisecondsForAlert"));
 		String webUrl = context.getCurrentXmlTest().getParameter("testurl");
 		
 		try {

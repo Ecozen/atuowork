@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-elementManager_demo">
-              <span class="suite-name border-failed">elementManager_demo</span>
+              <span class="suite-name border-passed">elementManager_demo</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-elementManager_demo">
-                    <span>C:\Users\Administrator\workspace\ElementManagerDemo\testng.xml</span>
+                    <span>C:\Users\Administrator\workspace\ElementManagerDemo\Default.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,21 +90,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-elementManager_demo" class="hide-methods failed suite-elementManager_demo"> (hide)</a> <!-- hide-methods failed suite-elementManager_demo -->
-                      <a href="#" panel-name="suite-elementManager_demo" class="show-methods failed suite-elementManager_demo"> (show)</a> <!-- show-methods failed suite-elementManager_demo -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-elementManager_demo" class="hide-methods passed suite-elementManager_demo"> (hide)</a> <!-- hide-methods passed suite-elementManager_demo -->
+                      <a href="#" panel-name="suite-elementManager_demo" class="show-methods passed suite-elementManager_demo"> (show)</a> <!-- show-methods passed suite-elementManager_demo -->
                     </span>
-                    <div class="method-list-content failed suite-elementManager_demo">
+                    <div class="method-list-content passed suite-elementManager_demo">
                       <span>
-                        <img width="3%" src="failed.png"/>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-elementManager_demo" title="com.test.page.testcases.LionFund_02_FixedInvestment_Test" hash-for-method="addFixedTest">addFixedTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-elementManager_demo" title="com.test.page.testcases.LionFund_02_FixedInvestment_Test" hash-for-method="editFixedTest">editFixedTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-elementManager_demo" title="com.test.page.testcases.LionFund_02_FixedInvestment_Test" hash-for-method="pauseFixedTest">pauseFixedTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-elementManager_demo -->
+                    </div> <!-- method-list-content passed suite-elementManager_demo -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -116,45 +126,51 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-elementManager_demo" class="panel elementManager_demo">
-          <div class="suite-elementManager_demo-class-failed">
+          <div class="suite-elementManager_demo-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">com.test.page.testcases.LionFund_02_FixedInvestment_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="addFixedTest">
+                  </a> <!-- addFixedTest -->
+                  <span class="method-name">addFixedTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editFixedTest">
+                  </a> <!-- editFixedTest -->
+                  <span class="method-name">editFixedTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="pauseFixedTest">
                   </a> <!-- pauseFixedTest -->
                   <span class="method-name">pauseFixedTest</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at com.test.keydriver.engine.DefaultExecutor.invoke(DefaultExecutor.java:42)
-	at com.test.keydriver.engine.DefaultExecutor.execute(DefaultExecutor.java:35)
-	at com.test.page.testcases.LionFund_02_FixedInvestment_Test.pauseFixedTest(LionFund_02_FixedInvestment_Test.java:48)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-... Removed 16 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-elementManager_demo-class-failed -->
+          </div> <!-- suite-elementManager_demo-class-passed -->
         </div> <!-- panel elementManager_demo -->
         <div panel-name="test-xml-elementManager_demo" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Administrator\workspace\ElementManagerDemo\testng.xml</span>
+            <span class="header-content">C:\Users\Administrator\workspace\ElementManagerDemo\Default.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite thread-count=&quot;1&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;elementManager_demo&quot; parallel=&quot;tests&quot;&gt;
+  &lt;parameter name=&quot;platform&quot; value=&quot;win&quot;/&gt;
   &lt;parameter name=&quot;testurl&quot; value=&quot;http://192.168.0.108:8090/lion-trade/h/login.action&quot;/&gt;
   &lt;parameter name=&quot;driverConfgFilePath&quot; value=&quot;config/driver.properties&quot;/&gt;
   &lt;parameter name=&quot;timeOut&quot; value=&quot;20&quot;/&gt;
   &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
+  &lt;parameter name=&quot;testEnv&quot; value=&quot;192.168.0.162&quot;/&gt;
   &lt;parameter name=&quot;sleepTime&quot; value=&quot;800&quot;/&gt;
   &lt;parameter name=&quot;waitMillisecondsForAlert&quot; value=&quot;40000&quot;/&gt;
   &lt;listeners&gt;
@@ -204,16 +220,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'pauseFixedTest')
+data.setCell(0, 1, 'addFixedTest')
 data.setCell(0, 2, 'com.test.page.testcases.LionFund_02_FixedInvestment_Test')
-data.setCell(0, 3, 37);
+data.setCell(0, 3, 40651);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'editFixedTest')
+data.setCell(1, 2, 'com.test.page.testcases.LionFund_02_FixedInvestment_Test')
+data.setCell(1, 3, 17502);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'pauseFixedTest')
+data.setCell(2, 2, 'com.test.page.testcases.LionFund_02_FixedInvestment_Test')
+data.setCell(2, 3, 12384);
 window.suiteTableData['elementManager_demo']= { tableData: data, tableDiv: 'times-div-elementManager_demo'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 ms</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-elementManager_demo">
               </div> <!-- times-div-elementManager_demo -->
             </div> <!-- times-div -->
@@ -224,13 +248,6 @@ return data;
             <span class="header-content">Reporter output for elementManager_demo</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">pauseFixedTest</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">[2016_09_13_18_01_18_pauseFixedTest ]tackScreentshot Failure:null</span>
-                <span class="reporter-method-output"><img src="./[2016_09_13_18_01_18_pauseFixedTest ]tackScreentshot Failure:null"/></span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-elementManager_demo" class="panel">
@@ -248,18 +265,24 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.page.testcases.LionFund_02_FixedInvestment_Test</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(org.testng.TestRunner@171c0b8)</span>
+                <span class="method-name">setup(org.testng.TestRunner@c4ccd2)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
+                <span class="method-name">addFixedTest</span>
+                <span class="method-start">5399 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">editFixedTest</span>
+                <span class="method-start">46052 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">pauseFixedTest</span>
-                <span class="method-start">63986 ms</span>
+                <span class="method-start">63561 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <span class="method-name">teardown(org.testng.TestRunner@171c0b8)</span>
-                <span class="method-start">64054 ms</span>
+                <span class="method-name">teardown(org.testng.TestRunner@c4ccd2)</span>
+                <span class="method-start">75955 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
