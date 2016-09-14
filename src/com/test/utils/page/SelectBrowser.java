@@ -38,7 +38,7 @@ public class SelectBrowser {
 		String testEnv = context.getCurrentXmlTest().getParameter("testEnv");
 		URL url = null;
 		try {
-			url = new URL(testEnv);
+			url = new URL("http://"+testEnv+":4444/wd/hub");
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		}
