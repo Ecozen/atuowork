@@ -138,9 +138,11 @@
 					<!-- 解决maven oom问题http://blog.csdn.net/e5945/article/details/7740904 -->
 					<argLine>-Xms512m -Xmx1024m -XX:PermSize=128m -XX:MaxPermSize=128m</argLine>
 					<forkCount>0</forkCount>
-					<!--   <systemPropertyVariables>
-		        	<test>${testEnv}</test>
-		      		</systemPropertyVariables>   -->
+					<systemPropertyVariables>
+			        	<test>${testEnv}</test>
+			        	<test>${browserName}</test>
+			        	<test>${platform}</test>
+		      		</systemPropertyVariables>
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>
 					</suiteXmlFiles>

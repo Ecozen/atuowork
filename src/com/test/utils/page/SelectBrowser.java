@@ -1,15 +1,20 @@
 package com.test.utils.page;
+import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriverService;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.phantomjs.PhantomJSDriverService;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.ITestContext;
 
@@ -23,12 +28,20 @@ public class SelectBrowser {
 	Logger logger = Logger.getLogger(SelectBrowser.class);
 
 	public WebDriver selectExplorerByName(String browser, ITestContext context) {
-		Properties props = System.getProperties(); // 获得系统属性集
-		String currentPlatform = props.getProperty("os.name"); // 操作系统名称
+//		Properties props = System.getProperties(); 
+//		String currentPlatform = props.getProperty("os.name"); 
+		String currentPlatform = context.getCurrentXmlTest().getParameter("platform");//手动配置操作系统
 		logger.info("当前操作系统是:[" + currentPlatform + "]");
 		logger.info("启动测试浏览器：[" + browser + "]");
-		//从testNG的配置文件读取参数driverConfgFilePath的值
-		String driverConfgFilePath = context.getCurrentXmlTest().getParameter("driverConfgFilePath");
+		String driverConfgFilePath = context.getCurrentXmlTest().getParameter("driverConfgFilePath");//配置驱动路径
+		//运行webDriver的地址
+		String testEnv = context.getCurrentXmlTest().getParameter("testEnv");
+		URL url = null;
+		try {
+			url = new URL(testEnv);
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		}
 		/** 声明好驱动的路径 */
 		String chromedriver_win = Config.getConfig(driverConfgFilePath, "chromedriver_win");
 		String chromedriver_linux = Config.getConfig(driverConfgFilePath, "chromedriver_linux");
@@ -43,16 +56,15 @@ public class SelectBrowser {
 				DesiredCapabilities ieCapabilities = DesiredCapabilities.internetExplorer();
 				ieCapabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
 				//返回ie浏览器对象
-				return new InternetExplorerDriver(ieCapabilities);
+				return new RemoteWebDriver(url, ieCapabilities);
 			} else if (browser.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver", chromedriver_win);
-//				ChromeOptions options = new ChromeOptions();  
-//				options.addArguments("user-data-dir=C:/Users/Administrator/AppData/Local/Google/Chrome/User Data");  
+				
 				//返回谷歌浏览器对象
-				 return new ChromeDriver();
+				 return new RemoteWebDriver(url, DesiredCapabilities.chrome());
 			} else if (browser.equalsIgnoreCase("firefox")) {
 				//返回火狐浏览器对象
-				return new FirefoxDriver();
+				return new RemoteWebDriver(url,DesiredCapabilities.firefox());
 
 			} else if(browser.equalsIgnoreCase("ghost")){
 				DesiredCapabilities ghostCapabilities = new DesiredCapabilities();
@@ -65,17 +77,16 @@ public class SelectBrowser {
 
 				logger.error("The [" + browser + "]" + " explorer is not applicable  for  [" + currentPlatform + "] OS");
 				Assert.fail("The [" + browser + "]" + " explorer does not apply to  [" + currentPlatform + "] OS");
-
 			}
 
 		} else if (currentPlatform.toLowerCase().contains("linux")) { //如果是linux平台
 
 			if (browser.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver", chromedriver_linux);
-				return new ChromeDriver();
+				return new RemoteWebDriver(url, DesiredCapabilities.chrome());
 
 			} else if (browser.equalsIgnoreCase("firefox")) {
-				return new FirefoxDriver();
+				return new RemoteWebDriver(url, DesiredCapabilities.firefox());
 			} else {
 				logger.error("The [" + browser + "]" + " explorer does not apply to  [" + currentPlatform + "] OS");
 				Assert.fail("The [" + browser + "]" + " explorer does not apply to  [" + currentPlatform + "] OS");
@@ -84,9 +95,9 @@ public class SelectBrowser {
 		} else if (currentPlatform.toLowerCase().contains("mac")) { //如果是mac平台
 			if (browser.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver", chromedriver_mac);
-				return new ChromeDriver();
+				return new RemoteWebDriver(url, DesiredCapabilities.chrome());
 			} else if (browser.equalsIgnoreCase("firefox")) {
-				return new FirefoxDriver();
+				return new RemoteWebDriver(url, DesiredCapabilities.firefox());
 			} else {
 				logger.error("The [" + browser + "]" + " explorer does not apply to  [" + currentPlatform + "] OS");
 				Assert.fail("The [" + browser + "]" + " explorer does not apply to  [" + currentPlatform + "] OS");

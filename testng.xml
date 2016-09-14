@@ -2,8 +2,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <!-- thread-count 定义同时启动的浏览器数 、parallel="tests" 表明每个test都是平级的 -->
 <suite name="elementManager_demo" parallel="tests" thread-count="1">
-	<!-- chrome,firefox,ghost和ie不区分大小写 -->
-	<parameter name="browserName" value="chrome" />
 	<!-- driver的属性配置文件保存路径 -->
 	<parameter name="driverConfgFilePath" value="config/driver.properties" />
 	<!-- 定义测试的站点 -->
@@ -14,6 +12,11 @@
 	<parameter name="timeOut" value="20" />
 	<!-- 这个是等待alert弹出的时间 单位毫秒 -->
 	<parameter name="waitMillisecondsForAlert" value="40000" />
+	
+	<!-- chrome,firefox,ghost和ie不区分大小写 -->
+	<parameter name="browserName" value="${browserName}" />
+	<parameter name="testEnv" value="${testEnv}" />
+	<parameter name="platform" value="${platform}" />
 	
 	<!-- arrow listener -->
 	<listeners>
