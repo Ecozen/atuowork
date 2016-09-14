@@ -2,39 +2,39 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="elementManager_demo" duration-ms="76155" started-at="2016-09-14T10:16:49Z" finished-at="2016-09-14T10:18:06Z">
+  <suite name="elementManager_demo" duration-ms="78604" started-at="2016-09-14T10:37:50Z" finished-at="2016-09-14T10:39:09Z">
     <groups>
     </groups>
-    <test name="lionfund_test" duration-ms="76155" started-at="2016-09-14T10:16:49Z" finished-at="2016-09-14T10:18:06Z">
+    <test name="lionfund_test" duration-ms="78604" started-at="2016-09-14T10:37:50Z" finished-at="2016-09-14T10:39:09Z">
       <class name="com.test.page.testcases.LionFund_02_FixedInvestment_Test">
-        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.test.page.testcases.LionFund_02_FixedInvestment_Test@1bd3f6f]" name="setup" is-config="true" duration-ms="5280" started-at="2016-09-14T18:16:49Z" finished-at="2016-09-14T18:16:55Z">
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.test.page.testcases.LionFund_02_FixedInvestment_Test@7ef378]" name="setup" is-config="true" duration-ms="5164" started-at="2016-09-14T18:37:50Z" finished-at="2016-09-14T18:37:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@c4ccd2]]>
+                <![CDATA[org.testng.TestRunner@13dfc97]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="addFixedTest()[pri:0, instance:com.test.page.testcases.LionFund_02_FixedInvestment_Test@1bd3f6f]" name="addFixedTest" duration-ms="40651" started-at="2016-09-14T18:16:55Z" finished-at="2016-09-14T18:17:36Z">
+        <test-method status="PASS" signature="addFixedTest()[pri:0, instance:com.test.page.testcases.LionFund_02_FixedInvestment_Test@7ef378]" name="addFixedTest" duration-ms="41554" started-at="2016-09-14T18:37:55Z" finished-at="2016-09-14T18:38:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addFixedTest -->
-        <test-method status="PASS" signature="editFixedTest()[pri:0, instance:com.test.page.testcases.LionFund_02_FixedInvestment_Test@1bd3f6f]" name="editFixedTest" duration-ms="17502" started-at="2016-09-14T18:17:36Z" depends-on-methods="com.test.page.testcases.LionFund_02_FixedInvestment_Test.addFixedTest" finished-at="2016-09-14T18:17:53Z">
+        <test-method status="PASS" signature="editFixedTest()[pri:0, instance:com.test.page.testcases.LionFund_02_FixedInvestment_Test@7ef378]" name="editFixedTest" duration-ms="17770" started-at="2016-09-14T18:38:37Z" depends-on-methods="com.test.page.testcases.LionFund_02_FixedInvestment_Test.addFixedTest" finished-at="2016-09-14T18:38:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editFixedTest -->
-        <test-method status="PASS" signature="pauseFixedTest()[pri:0, instance:com.test.page.testcases.LionFund_02_FixedInvestment_Test@1bd3f6f]" name="pauseFixedTest" duration-ms="12384" started-at="2016-09-14T18:17:53Z" depends-on-methods="com.test.page.testcases.LionFund_02_FixedInvestment_Test.editFixedTest" finished-at="2016-09-14T18:18:05Z">
+        <test-method status="PASS" signature="pauseFixedTest()[pri:0, instance:com.test.page.testcases.LionFund_02_FixedInvestment_Test@7ef378]" name="pauseFixedTest" duration-ms="12545" started-at="2016-09-14T18:38:54Z" depends-on-methods="com.test.page.testcases.LionFund_02_FixedInvestment_Test.editFixedTest" finished-at="2016-09-14T18:39:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pauseFixedTest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestContext)[pri:0, instance:com.test.page.testcases.LionFund_02_FixedInvestment_Test@1bd3f6f]" name="teardown" is-config="true" duration-ms="194" started-at="2016-09-14T18:18:05Z" finished-at="2016-09-14T18:18:06Z">
+        <test-method status="PASS" signature="teardown(org.testng.ITestContext)[pri:0, instance:com.test.page.testcases.LionFund_02_FixedInvestment_Test@7ef378]" name="teardown" is-config="true" duration-ms="1500" started-at="2016-09-14T18:39:07Z" finished-at="2016-09-14T18:39:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@c4ccd2]]>
+                <![CDATA[org.testng.TestRunner@13dfc97]]>
               </value>
             </param>
           </params>

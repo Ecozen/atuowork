@@ -53,33 +53,20 @@ public class SelectBrowser {
 
 			if (browser.equalsIgnoreCase("ie")) {
 				System.setProperty("webdriver.ie.driver", iedriver);
-				//IE的常规设置，便于执行自动化测试
 				DesiredCapabilities ieCapabilities = DesiredCapabilities.internetExplorer();
+				//IE的常规设置，便于执行自动化测试
 				ieCapabilities.setCapability(InternetExplorerDriver.INTRODUCE_FLAKINESS_BY_IGNORING_SECURITY_DOMAINS, true);
-				//返回ie浏览器对象
 				return new RemoteWebDriver(url, ieCapabilities);
 			} else if (browser.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver", chromedriver_win);
-				ChromeDriverService service = new ChromeDriverService.Builder()
-						.usingDriverExecutable(new File(chromedriver_win))
-						.usingAnyFreePort()
-						.build();
-				try {
-					service.start();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-				//返回谷歌浏览器对象
-				 return new RemoteWebDriver(service.getUrl(), DesiredCapabilities.chrome());
+				 return new RemoteWebDriver(url, DesiredCapabilities.chrome());
 			} else if (browser.equalsIgnoreCase("firefox")) {
-				//返回火狐浏览器对象
 				return new RemoteWebDriver(url,DesiredCapabilities.firefox());
 
 			} else if(browser.equalsIgnoreCase("ghost")){
 				DesiredCapabilities ghostCapabilities = new DesiredCapabilities();
 				ghostCapabilities.setJavascriptEnabled(true);                       
 				ghostCapabilities.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, ghostdriver_win);
-				//返回ghost对象
 			    return new PhantomJSDriver(ghostCapabilities);
 				
 			}else {
