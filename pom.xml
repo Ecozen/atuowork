@@ -139,10 +139,11 @@
 					<argLine>-Xms512m -Xmx1024m -XX:PermSize=128m -XX:MaxPermSize=128m</argLine>
 					<forkCount>0</forkCount>
 					<systemPropertyVariables>
-					<!-- 
 			        	<test>${testEnv}</test>
 			        	<test>${browserName}</test>
-			        	<test>${platform}</test> -->
+			        	<test>${platform}</test>
+			        	<test>${dataPath}</test>
+			        	<test>${sheetName}</test>
 		      		</systemPropertyVariables>
 					<suiteXmlFiles>
 						<suiteXmlFile>testng.xml</suiteXmlFile>

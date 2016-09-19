@@ -4,11 +4,13 @@
   <parameter name="platform" value="win"/>
   <parameter name="driverConfgFilePath" value="config/driver.properties"/>
   <parameter name="testurl" value="http://192.168.0.108:8090/lion-trade/h/login.action"/>
+  <parameter name="dataPath" value="file/data.xlsx"/>
   <parameter name="timeOut" value="20"/>
   <parameter name="browserName" value="chrome"/>
   <parameter name="sleepTime" value="800"/>
   <parameter name="testEnv" value="192.168.0.162"/>
   <parameter name="waitMillisecondsForAlert" value="40000"/>
+  <parameter name="sheetName" value="data"/>
   <listeners>
     <listener class-name="com.test.plugins.arrow.TestResultListener"/>
     <listener class-name="com.test.plugins.arrow.RetryListener"/>
@@ -19,7 +21,7 @@
       <class name="com.test.page.testcases.LionFund_02_FixedInvestment_Test">
         <methods>
           <include name="pauseFixedTest"/>
-          <include name="addFixedTest"/>
+          <include name="addFixedTest" invocation-numbers="0"/>
           <include name="teardown"/>
           <include name="editFixedTest"/>
           <include name="setup"/>

@@ -13,11 +13,12 @@
 	<!-- 这个是等待alert弹出的时间 单位毫秒 -->
 	<parameter name="waitMillisecondsForAlert" value="40000" />
 	
-	<!-- chrome,firefox,ghost和ie不区分大小写 -->
+	<!-- jenkins 传参 -->
 	<parameter name="browserName" value="${browserName}" />
 	<parameter name="testEnv" value="${testEnv}" />
 	<parameter name="platform" value="${platform}" />
-	
+	<parameter name="dataPath" value="${dataPath}" />
+	<parameter name="sheetName" value="${sheetName}" />
 	<!-- arrow listener -->
 	<listeners>
 	<listener class-name="com.test.plugins.arrow.TestResultListener" />

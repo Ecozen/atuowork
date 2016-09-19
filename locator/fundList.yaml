@@ -1,0 +1,6 @@
+select_all
+  type:linkText
+  value:全部基金
+fund_list
+  type:tagName
+  value:tbody

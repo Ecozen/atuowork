@@ -45,12 +45,16 @@ public class ExcelUtil {
 
 	public ExcelUtil(String filePath){
 		this.filePath = filePath;
-		if (filePath.endsWith(".xlsx")) {
-			workBook = new XSSFWorkbook();
-		}else if(filePath.endsWith(".xls")){
-			workBook = new HSSFWorkbook();
+		File file = new File(filePath);
+		if(file.exists()&&file.isFile())
+			load();
+		else{
+			if (filePath.endsWith(".xlsx")) {
+				workBook = new XSSFWorkbook();
+			}else if(filePath.endsWith(".xls")){
+				workBook = new HSSFWorkbook();
+			}
 		}
-    	
 	}
 	
     private void load() {
@@ -173,7 +177,8 @@ public class ExcelUtil {
     public void writeSheetData(String sheetName,List<String> columnHeaderList,List<List<String>> listData){
     	int rowNum =0;
     	boolean hasHeader = false;
-    	sheet = workBook.createSheet(sheetName);
+    	if(workBook.getSheet(sheetName)==null)
+    		sheet = workBook.createSheet(sheetName);
     	for (int i = 0; i < listData.size(); i++) {
     		if(!hasHeader&&columnHeaderList!=null&&columnHeaderList.size()>0){
     			writeRowData(columnHeaderList, rowNum);
@@ -184,11 +189,11 @@ public class ExcelUtil {
     		writeRowData(rowData, rowNum);
 			rowNum++;
 		}
-    	load(sheetName);
+    	flush(sheetName);
     	
     }
     
-    private void load(String sheetName){
+    private void flush(String sheetName){
         FileOutputStream stream = null;
         try {
             stream = new FileOutputStream(new File(filePath));

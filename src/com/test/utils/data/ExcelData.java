@@ -10,7 +10,16 @@ public class ExcelData implements DataInterface{
 
 	@Override
 	public List<Map<String, String>> getTestMethodData() {
-		List<Map<String, String>> list = new ExcelUtil("file/data.xlsx", "data").getMapData();
+		return getTestMethodData("file/data.xlsx");
+	}
+
+	@Override
+	public List<Map<String, String>> getTestMethodData(String path) {
+		return getTestMethodData(path, "data");
+	}
+	
+	public List<Map<String, String>> getTestMethodData(String path,String sheetName) {
+		List<Map<String, String>> list = new ExcelUtil(path, sheetName).getMapData();
 		return list;
 	}
 

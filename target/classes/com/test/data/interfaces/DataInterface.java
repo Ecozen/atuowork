@@ -5,4 +5,5 @@ import java.util.Map;
 
 public interface DataInterface {
 	public List<Map<String, String>> getTestMethodData();
+	public List<Map<String, String>> getTestMethodData(String path);
 }

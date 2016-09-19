@@ -18,6 +18,7 @@ import com.test.keydriver.annotation.AutoMethod;
 import com.test.keydriver.annotation.InitialAnnotation;
 import com.test.utils.Config;
 import com.test.utils.LogConfiguration;
+import com.test.utils.data.ExcelData;
 import com.test.utils.page.PageHelper;
 
 public class TestBase {
@@ -69,6 +70,13 @@ public class TestBase {
     	return this.getTestData(testData);
     }
      
+    @DataProvider
+    public Iterator<Object[]> excelDataProvider(ITestContext context){
+    	String path = context.getCurrentXmlTest().getParameter("dataPath");
+    	String sheetName=context.getCurrentXmlTest().getParameter("sheetName");
+    	return this.getTestData(path,sheetName);
+    }
+    
     private Object[][] getTestData(){
     	DataInterface testData = this.getDataInstance(Config.DATA_SOURCE);
         List<Map<String, String>> listData = testData.getTestMethodData();
@@ -81,6 +89,16 @@ public class TestBase {
     
     private Iterator<Object[]> getTestData(DataInterface testData){
     	List<Map<String, String>> listData = testData.getTestMethodData();
+    	List<Object[]> result = new ArrayList<>();
+    	for (int i = 0; i < listData.size(); i++) {
+             result.add(new Object[]{listData.get(i)});
+        }
+    	return result.iterator();
+    }
+    
+    private Iterator<Object[]> getTestData(String path,String sheetName){
+    	ExcelData testData = new ExcelData();
+		List<Map<String, String>> listData = testData .getTestMethodData(path,sheetName);
     	List<Object[]> result = new ArrayList<>();
     	for (int i = 0; i < listData.size(); i++) {
              result.add(new Object[]{listData.get(i)});

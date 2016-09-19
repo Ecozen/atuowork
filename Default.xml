@@ -13,6 +13,9 @@
 	<!-- 这个是等待alert弹出的时间 单位毫秒 -->
 	<parameter name="waitMillisecondsForAlert" value="40000" />
 	
+	<parameter name="dataPath" value="file/data.xlsx" />
+	<parameter name="sheetName" value="data" />
+	
 	<!-- chrome,firefox,ghost和ie不区分大小写 -->
 	<parameter name="browserName" value="chrome" />
 	<parameter name="testEnv" value="192.168.0.162" />
