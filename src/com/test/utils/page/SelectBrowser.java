@@ -59,6 +59,7 @@ public class SelectBrowser {
 				return new RemoteWebDriver(url, ieCapabilities);
 			} else if (browser.equalsIgnoreCase("chrome")) {
 				System.setProperty("webdriver.chrome.driver", chromedriver_win);
+				logger.info("start loading :"+testEnv);
 				 return new RemoteWebDriver(url, DesiredCapabilities.chrome());
 			} else if (browser.equalsIgnoreCase("firefox")) {
 				return new RemoteWebDriver(url,DesiredCapabilities.firefox());

@@ -2,23 +2,23 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="elementManager_demo" duration-ms="74303" started-at="2016-09-19T09:21:38Z" finished-at="2016-09-19T09:22:52Z">
+  <suite name="elementManager_demo" duration-ms="75638" started-at="2016-09-19T09:59:39Z" finished-at="2016-09-19T10:00:55Z">
     <groups>
     </groups>
-    <test name="lionfund_test" duration-ms="74303" started-at="2016-09-19T09:21:38Z" finished-at="2016-09-19T09:22:52Z">
+    <test name="lionfund_test" duration-ms="75638" started-at="2016-09-19T09:59:39Z" finished-at="2016-09-19T10:00:55Z">
       <class name="com.test.page.testcases.LionFund_02_FixedInvestment_Test">
-        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.test.page.testcases.LionFund_02_FixedInvestment_Test@116e8e6]" name="setup" is-config="true" duration-ms="3841" started-at="2016-09-19T17:21:38Z" finished-at="2016-09-19T17:21:42Z">
+        <test-method status="PASS" signature="setup(org.testng.ITestContext)[pri:0, instance:com.test.page.testcases.LionFund_02_FixedInvestment_Test@3a2be1]" name="setup" is-config="true" duration-ms="5133" started-at="2016-09-19T17:59:39Z" finished-at="2016-09-19T17:59:44Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@230076]]>
+                <![CDATA[org.testng.TestRunner@1b1eb3a]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="addFixedTest(java.util.Map)[pri:0, instance:com.test.page.testcases.LionFund_02_FixedInvestment_Test@116e8e6]" name="addFixedTest" duration-ms="38933" started-at="2016-09-19T17:21:43Z" data-provider="excelDataProvider" finished-at="2016-09-19T17:22:21Z">
+        <test-method status="PASS" signature="addFixedTest(java.util.Map)[pri:0, instance:com.test.page.testcases.LionFund_02_FixedInvestment_Test@3a2be1]" name="addFixedTest" duration-ms="39150" started-at="2016-09-19T17:59:45Z" data-provider="excelDataProvider" finished-at="2016-09-19T18:00:24Z">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addFixedTest -->
-        <test-method status="PASS" signature="editFixedTest(java.util.Map)[pri:0, instance:com.test.page.testcases.LionFund_02_FixedInvestment_Test@116e8e6]" name="editFixedTest" duration-ms="17468" started-at="2016-09-19T17:22:22Z" data-provider="excelDataProvider" depends-on-methods="com.test.page.testcases.LionFund_02_FixedInvestment_Test.addFixedTest" finished-at="2016-09-19T17:22:39Z">
+        <test-method status="PASS" signature="editFixedTest(java.util.Map)[pri:0, instance:com.test.page.testcases.LionFund_02_FixedInvestment_Test@3a2be1]" name="editFixedTest" duration-ms="16959" started-at="2016-09-19T18:00:24Z" data-provider="excelDataProvider" depends-on-methods="com.test.page.testcases.LionFund_02_FixedInvestment_Test.addFixedTest" finished-at="2016-09-19T18:00:41Z">
           <params>
             <param index="0">
               <value>
@@ -40,7 +40,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editFixedTest -->
-        <test-method status="PASS" signature="pauseFixedTest(java.util.Map)[pri:0, instance:com.test.page.testcases.LionFund_02_FixedInvestment_Test@116e8e6]" name="pauseFixedTest" duration-ms="12076" started-at="2016-09-19T17:22:39Z" data-provider="excelDataProvider" depends-on-methods="com.test.page.testcases.LionFund_02_FixedInvestment_Test.editFixedTest" finished-at="2016-09-19T17:22:51Z">
+        <test-method status="PASS" signature="pauseFixedTest(java.util.Map)[pri:0, instance:com.test.page.testcases.LionFund_02_FixedInvestment_Test@3a2be1]" name="pauseFixedTest" duration-ms="12048" started-at="2016-09-19T18:00:41Z" data-provider="excelDataProvider" depends-on-methods="com.test.page.testcases.LionFund_02_FixedInvestment_Test.editFixedTest" finished-at="2016-09-19T18:00:53Z">
           <params>
             <param index="0">
               <value>
@@ -51,11 +51,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pauseFixedTest -->
-        <test-method status="PASS" signature="teardown(org.testng.ITestContext)[pri:0, instance:com.test.page.testcases.LionFund_02_FixedInvestment_Test@116e8e6]" name="teardown" is-config="true" duration-ms="893" started-at="2016-09-19T17:22:51Z" finished-at="2016-09-19T17:22:52Z">
+        <test-method status="PASS" signature="teardown(org.testng.ITestContext)[pri:0, instance:com.test.page.testcases.LionFund_02_FixedInvestment_Test@3a2be1]" name="teardown" is-config="true" duration-ms="1437" started-at="2016-09-19T18:00:53Z" finished-at="2016-09-19T18:00:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@230076]]>
+                <![CDATA[org.testng.TestRunner@1b1eb3a]]>
               </value>
             </param>
           </params>
